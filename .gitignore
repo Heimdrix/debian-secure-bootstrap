@@ -1,0 +1,60 @@
+# --- Environment / Secrets ---
+
+.env
+.env.*
+!.env.example
+
+secrets/
+*.key
+*.pem
+*.crt
+*.gpg
+
+# --- Config (local only) ---
+
+config/default.sh
+
+# --- Recovery / Backups ---
+
+recovery/
+*.img
+*.iso
+
+# --- Logs ---
+
+.log/
+logs/
+*.log
+
+# --- Temporary files ---
+
+tmp/
+temp/
+*.tmp
+*.swp
+*.bak
+
+# --- Build / Output ---
+
+output/
+build/
+dist/
+
+# --- OS files ---
+
+.DS_Store
+Thumbs.db
+
+# --- Editors ---
+
+.vscode/
+.idea/
+
+# --- Python (future use) ---
+
+**pycache**/
+*.pyc
+
+# --- Shell debug ---
+
+*.trace
