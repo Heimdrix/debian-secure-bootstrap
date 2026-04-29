@@ -1,4 +1,4 @@
-# debian-secure-bootstrap
+# debian-secure-bootstrap (UEFI Only)
 
 Security-focused Debian workstation provisioning with LUKS, Btrfs, Secure Boot, UKI, and TPM. Built for hardened and reproducible endpoint deployments.
 
