@@ -8,16 +8,10 @@ luks_format() {
   assert_blk  "$LUKS_PARTITION" || return 1
   assert_file "$LUKS_KEYFILE"   || return 1
   
-  if [ "${ENABLE_TPM:-0}" = "1" ]; then
-    _key_slot=2
-  else
-    _key_slot=0
-  fi
-
   cryptsetup luksFormat         \
     --batch-mode                \
     --key-file "$LUKS_KEYFILE"  \
-    --key-slot "$_key_slot"     \
+    --key-slot 2                \
     --type luks2                \
     --                          \
     "$LUKS_PARTITION" || return 1

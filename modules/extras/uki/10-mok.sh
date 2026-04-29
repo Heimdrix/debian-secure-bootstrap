@@ -9,7 +9,7 @@ mok_create() {
   chmod 0755 -- \
     "$INSTALL_MOUNTPOINT$MOK_CERT_DIR" || return 1
 
-  chroot "$INSTALL_MOUNTPOINT"                \    
+  chroot "$INSTALL_MOUNTPOINT"                \
     openssl req                               \
       -new                                    \
       -x509                                   \
